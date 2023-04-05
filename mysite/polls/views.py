@@ -8,7 +8,7 @@ from django.views import View, generic
 # Create your views here.
 
 class IndexView(generic.ListView):
-    model = Question
+    template_name='polls/index.html'
     context_object_name = 'latest_question_list'
 
     def get_queryset(self):
