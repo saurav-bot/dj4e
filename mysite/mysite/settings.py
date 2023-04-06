@@ -41,7 +41,10 @@ INSTALLED_APPS = [
     'home.apps.HomeConfig',
     'hello.apps.HelloConfig',
     'autos.apps.AutosConfig',
-    'cats.apps.CatsConfig'
+    'cats.apps.CatsConfig',
+    'crispy_forms',
+    'crispy_bootstrap5',
+    'crispy.apps.CrispyConfig'
 ]
 
 MIDDLEWARE = [
@@ -53,6 +56,10 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+
 
 ROOT_URLCONF = 'mysite.urls'
 
