@@ -1,0 +1,13 @@
+{% extends 'base_bootstrap.html' %}
+{% block content %}
+    <form method="post" action="">
+        {% csrf_token %}
+        {% if form.error_message %}
+            <p>{{ form.error_message }}</p>
+        {% endif %}
+        <table>
+            {{ form.as_table}}
+        </table>
+        <input type="Submit">
+    </form>
+{% endblock %}

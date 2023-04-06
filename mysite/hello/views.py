@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 # Create your views here.
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 def myview(request):
     count = request.session.get('view_count', 0)
