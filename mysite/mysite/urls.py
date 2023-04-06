@@ -25,5 +25,6 @@ urlpatterns = [
     path('autos/', include('autos.urls')),
     path('cats/', include('cats.urls')),
     path('crispy/',include('crispy.urls')),
+    path('myarts/', include('myarts.urls'))
 
 ]

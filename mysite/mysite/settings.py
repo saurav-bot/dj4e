@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'cats.apps.CatsConfig',
     'crispy_forms',
     'crispy_bootstrap5',
-    'crispy.apps.CrispyConfig'
+    'crispy.apps.CrispyConfig',
+    'myarts.apps.MyartsConfig',
 ]
 
 MIDDLEWARE = [
